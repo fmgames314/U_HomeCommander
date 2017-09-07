@@ -16,5 +16,7 @@ print (version)
 print (myfile)
 print (version != myfile)
 if(version != myfile):
+	if(os.path.isfile("U_Home_Commander.exe")):
+		os.remove("U_Home_Commander.exe")
 	urllib.urlretrieve ("https://github.com/fmgames314/U_HomeCommander/raw/master/U_HomeCommander.exe", "U_Home_Commander.exe")
 subprocess.Popen([r"U_Home_Commander.exe"])  
